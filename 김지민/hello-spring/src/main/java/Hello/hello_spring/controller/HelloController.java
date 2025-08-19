@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 @Controller //어노테이션
-public class HelloController {
+public class HelloController { //요청 받기
     @GetMapping("hello") //정적 페이지
     public String hello(Model model){
         model.addAttribute("data","haha ha");

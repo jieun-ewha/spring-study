@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+  <div>
+    <table>
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>이름</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="member : ${members}"> //템플릿 엔진의 역할. members: model 안의 요소를 꺼냄.
+        <td th:text="${member.id}"></td> //th:타임리프 문법으로, 루프를 도는 것을 의미함.
+        <td th:text="${member.name}"></td> //member의 getName,getId에 접근해서 값을 얻어옴.
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div> <!-- /container -->
+</body>
+</html>

@@ -1,4 +1,4 @@
-package Hello.hello_spring;
+package Hello.hello_spring; //이거의 하위 패키지만 컴포넌트 스캔 함.
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
